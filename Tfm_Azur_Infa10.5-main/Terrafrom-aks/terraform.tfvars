@@ -1,0 +1,11 @@
+resource_group_name = "infa_aks_tf_rg"
+location            = "uaenorth"
+cluster_name        = "infa-aks"
+kubernetes_version  = "1.22.6"
+system_node_count   = 1
+acr_name            = "infaacr"
+node_size           = "standard_DSv2"
+SUBSCRIPTION_ID = var.ARM_CLIENT_ID
+SP_CLIENT_ID       = var.AZURE_CLIENT_ID
+SP_CLIENT_SECRET   = var.AZURE_CLIENT_SECRET
+SP_TENANT_ID       =var.AZURE_TENANT_ID
